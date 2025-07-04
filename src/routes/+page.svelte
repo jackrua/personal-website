@@ -16,15 +16,16 @@
 </header>
 
 <main>
-    <section id="about">
-        <div id="about-content">
-            <img src="/propic.JPG" alt="Profile pic taken by my beautiful gf" class="profile-pic" />
-        
+    <div id="about-content">
+    <div>
+    <img src="/propic.JPG" alt="Profile pic taken by my beautiful gf" class="profile-pic" />
+    </div>
+    <div>
+    <section id="about">      
             <div class="about-text">
                 <p>I am a machine learning engineer based in Milan.</p>
                 <p>I am currently employed at Fineco Bank and I do some freelance work on the side.</p>   
             </div>
-        </div>
     </section>
 
     <section id="blog">
@@ -41,7 +42,8 @@
         <h2>Projects</h2>
         <p>This is where the projects will go</p>
     </section>
-
+    </div>    
+    </div>
 </main>
 
 
@@ -83,6 +85,7 @@
         width:250px;
         margin: 1.5rem auto;
         clip-path: inset(0 0 0 35px);
+        align-self: flex-start;
     }
 
     section {
@@ -92,9 +95,10 @@
     #about-content {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         flex-wrap: wrap;
+        flex-flow: center;
         gap: 1rem;
     }
 
@@ -105,7 +109,7 @@
     @media (min-width: 600px) {
         #about-content {
             flex-direction: row;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             text-align: left;
 
